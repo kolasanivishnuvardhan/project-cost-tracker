@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { Provider } from 'react-redux';
+import { store } from './store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ColorModeScript } from '@chakra-ui/react';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <ColorModeScript initialColorMode="light" />
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
