@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth, connectAuthEmulator, browserPopupRedirectResolver } from 'firebase/auth';
-import { getFirestore, connectFirestoreEmulator, doc, setDoc, collection, deleteDoc, getDocs } from 'firebase/firestore';
+import { getAuth, browserPopupRedirectResolver } from 'firebase/auth';
+import { getFirestore, doc, setDoc, collection } from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -39,8 +39,8 @@ const setupFirestore = async (userId) => {
     console.log("User document created or updated");
     
     // Create items and otherCosts collections structure
-    const itemsCollRef = collection(db, 'users', userId, 'items');
-    const otherCostsCollRef = collection(db, 'users', userId, 'otherCosts');
+    collection(db, 'users', userId, 'items');
+    collection(db, 'users', userId, 'otherCosts');
     
     // No sample data will be added as per user's request
     
