@@ -8,6 +8,8 @@ A web application to help track project costs, including items and additional ex
 - **Items Management**: Add, edit, and delete project items with cost tracking
 - **Other Costs Management**: Track additional project expenses
 - **Cost Summary**: View total project cost with breakdowns
+- **Clean Starting State**: No dummy data - begin with a fresh, clean slate
+- **Personalized Avatar**: User avatar displays the first letter of your name
 - **Responsive Design**: Works on mobile, tablet, and desktop
 - **Dark Mode Support**: Toggle between light and dark themes
 - **Animations**: Smooth transitions and animations for a better user experience
@@ -43,9 +45,10 @@ A web application to help track project costs, including items and additional ex
 ## Usage
 
 1. Register a new account or log in with existing credentials
-2. Add project items with their costs
-3. Add additional project costs
-4. View the total project cost and breakdowns
+2. Start with a clean dashboard - no pre-populated data
+3. Add your project items with their costs
+4. Add any additional project costs
+5. View the total project cost and breakdowns in real-time
 
 ## Deployment
 
